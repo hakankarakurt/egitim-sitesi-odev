@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="tr" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim Kursu</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        .bg-custom-blue {
+            background-color: #273c75; 
+        }
+
+        .text-custom-blue {
+            color: #273c75; 
+        }
+    </style>
+</head>
+
+<body class="bg-red-300">
+    <header class="bg-gray-800 text-white py-4 mr-4 ml-4">
+        <div class="container flex justify-between items-center mx-auto">
+            <h1 class="text-lg font-semibold text-red-600 ml-8">Hakan'ın Yazılım Fabrikası</h1>
+            <nav>
+                <ul class="flex space-x-4 mr-8">
+                    <li class="hover:bg-red-500 rounded-md"><a href="egitim.html">Eğitim İçerikleri</a></li>
+                    <li class="hover:bg-red-500 rounded-md"> <a href="kurs.html">Kurslar</a></li>
+                    <li class="hover:bg-red-500 rounded-md"><a href="index.html">Ana Sayfa</a></li>
+                    <li class="hover:bg-red-500 rounded-md"><a href="#">Hesabım</a></li>
+                </ul>
+                <button onclick="darkMode()" class=" mr-8 float-right bg-gray-800 hover:bg-gray-700 text-white text-sm h-10 rounded flex justify-between items-center px-4 min-w-[132px]">
+                    <svg class="mr-3 fill-current text-white" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"/></svg>
+                    <span class="hidden dark:inline">Açık Mod</span>
+                    <span class="inline dark:hidden">Koyu Mod</span>
+                </button>
+            </nav>
+        </div>
+        
+    </header>
+
+    <section class="bg-cover bg-center py-16 mr-4 ml-4" style=" background-image: url('https://yazilimgelistirici.subu.edu.tr/storage/55/conversions/yazilim-meslegindeki-farkli-uzmanlik-alanlari-image.jpg');">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl font-bold mb-4 text-red-950">KEŞKE YAZILIM ÖĞRENSEYDİM DEMEK İSTEMİYORSAN ŞİMDİ TAM SIRASI</h1>
+            <p class="text-gray-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ipsa sapiente atque recusandae exercitationem velit porro dignissimos reprehenderit fugit cupiditate! Eum, magni eos? Dolorem molestias quas numquam nesciunt quam tempore.</p>
+        </div>
+    </section>
+
+    <section class="bg-blue-300 py-16 mr-4 ml-4">
+        <div class="container mx-auto">
+            <div>
+                <h1 class="text-3xl font-bold mb-8 text-center text-red-950">Eğitimlerimiz</h1>
+            </div>
+            
+            <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center m-auto">
+                <div class="border border-red-800 bg-violet-400 shadow-md rounded-lg  p-6 ">
+                    <h2 class="text-lg font-semibold mb-2 text-red-500">Front-End Eğitimi</h2>
+                    <p class="text-gray-700 mb-4">Bu eğitimi tamamla, front-end için hiçbir eksiğin kalmasın.</p>
+                    <h3 class="text-gray-800 font-semibold">Fiyat</h3>
+                    <p class="text-gray-700 mb-4">50$</p>
+                    <a href="egitim.html" class="btn btn-primary   hover:bg-red-500">Detaylar</a>
+                </div>
+                <div class="border border-red-800 bg-violet-400 rounded-lg shadow-md p-6">
+                    <h2 class="text-lg font-semibold mb-2 text-red-500">Back-End Eğitimi</h2>
+                    <p class="text-gray-700 mb-4">Kaliteli bir Back-End Developer olmak kim istemez?. <br> Hemen şimdi başla!</p>
+                    <h3 class="text-gray-800 font-semibold">Fiyat</h3>
+                    <p class="text-gray-700 mb-4">44.90$</p>
+                    <a href="egitim.html" class="btn btn-primary  hover:bg-red-500">Detaylar</a>
+                </div>
+                <div class="border border-red-800 bg-violet-400 rounded-lg shadow-md p-6 mr-2">
+                    <h2 class="text-lg font-semibold mb-2 text-red-500">Kotlin Eğitimi</h2>
+                    <p class="text-gray-700 mb-4">Android telefon kullanıyorsun. Peki onu programlamak istemez misin? <br> Şimdi öğren!</p>
+                    <h3 class="text-gray-800 font-semibold">Fiyat</h3>
+                    <p class="text-gray-700 mb-4">70$</p>
+                    <a href="egitim.html" class="btn btn-primary hover:bg-red-500">Detaylar</a>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+    <script>
+        function darkMode(){
+            document.documentElement.classList.toggle('dark');
+        }
+    </script>
+</body>
+
+</html>
+

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs İçeriği</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-pink-200">
+
+    <header class="bg-gray-800 text-white py-4 px-4">
+        <div class="container flex justify-between items-center mx-auto">
+            <h1 class="text-lg font-semibold text-red-600">Hakan'ın Yazılım Fabrikası</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="egitim.html" class="hover:bg-red-500 rounded-md px-2 py-1">Eğitim İçerikleri</a></li>
+                    <li><a href="kurs.html" class="hover:bg-red-500 rounded-md px-2 py-1">Kurslar</a></li>
+                    <li><a href="index.html" class="hover:bg-red-500 rounded-md px-2 py-1">Ana Sayfa</a></li>
+                    <li><a href="#" class="hover:bg-red-500 rounded-md px-2 py-1">Hesabım</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container py-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+                <h1 class="text-3xl font-bold text-gray-800 ml-4 mb-4">Front-End Kursu</h1>
+                <h2 class="ml-4 font-bold mb-2">HTML nedir?</h2>
+
+                <a href="#" class="ml-4 block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md shadow-md mb-4">Kurs Dökümanlarını İndir (PDF)</a>
+
+                <div class="ml-4 aspect-w-16 aspect-h-9 mb-4">
+                    <iframe width="500" height="300" src="https://www.youtube.com/embed/UB1O30fR-EE?si=fBb6NXLaZnEFe_90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mx-auto py-4">
+        <h1 class="text-2xl font-bold ml-4 mb-4">Yorumlar</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-white p-4 rounded-md shadow-md ml-4 h-%33">
+                <h2 class="text-lg font-semibold mb-2">Emre Üst</h2>
+                <p class="text-gray-700">Hocam 3. dakika bende hata veriyor.</p>
+            </div>
+            <br>
+            <div class="bg-white p-4 rounded-md shadow-md ml-4 h-%33">
+                <h2 class="text-lg font-semibold mb-2">Ayşe Yılmaz</h2>
+                <p class="text-gray-700">Teşekkürler hocam çok faydalı bir ders oldu.</p>
+            </div>
+            <br>
+            <div>
+                <form action="yorum">
+                    <label class="text-lg font-semibold mb-2  ml-4" for="yorum">Yorum Yapabilirsiniz</label> <br>
+                    <input class="ml-4 w-auto" type="text" id="yorum" placeholder="Yorumunuzu giriniz..."> 
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <aside class="w-1/6 h-full fixed top-16 right-0 bg-purple-600 overflow-y-auto">
+        <section class="flex flex-col justify-center items-center">
+            <h1 class="text-xl font-bold mb-3 text-white">HTML</h1>
+            <ul class="text-center text-white">
+                <li><a href="#">Giriş</a></li> <hr>
+                <li><a href="#">Semantic Kod</a></li> <hr>
+                <li><a href="#">Id-Class kullanımı</a></li> <hr>
+            </ul>
+        </section>
+        <section class="flex flex-col justify-center items-center">
+            <h1 class="text-xl font-bold mb-3 mt-4 text-white">CSS</h1>
+            <ul class="text-center text-white">
+                <li><a href="#">Giriş</a></li> <hr>
+                <li><a href="#">External, Inline, Internal Css</a></li> <hr>
+                <li><a href="#">Bootstrap</a></li> <hr>
+                <li><a href="#">Bulma</a></li> <hr>
+                <li><a href="#">Tailwind</a></li> <hr>
+            </ul>
+        </section>
+        <section class="flex flex-col justify-center items-center">
+            <h1 class="text-xl font-bold mb-3 mt-4 text-white">JavaScript</h1>
+            <ul class="text-center text-white">
+                <li><a href="#">Giriş</a></li> <hr>
+                <li><a href="#">Html ve CSS'ten farkı</a></li> <hr>
+                <li><a href="#">Değişkenler</a></li> <hr>
+                <li><a href="#">Fonksiyonlar</a></li> <hr>
+                <li><a href="#">If-Else Yapısı</a></li> <hr>
+            </ul>
+        </section>
+        <section class="flex flex-col justify-center items-center">
+            <h1 class="text-xl font-bold mb-3 mt-4 text-white">React</h1>
+            <ul class="text-center text-white">
+                <li><a href="#">Giriş</a></li> <hr>
+                <li><a href="#">Yapısı</a></li><hr>
+                <li><a href="#">Ne yenelikler katar?</a></li><hr>
+                <li><a href="#">Proje</a></li>
+            </ul>
+        </section>
+    </aside>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
